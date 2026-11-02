@@ -44,6 +44,6 @@ if time_to_insert:
     st.success('Your Smoothie is ordered!', icon="✅")
 
 # New section to disply smoothiefroot nutrition information
-  import requests  
+import requests  
 smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")  
 st.text(smoothiefroot_response)
