@@ -1,15 +1,10 @@
-#Requirement.txt
-snowflake-snowpark-python
-streamlit
-definition_version: 2
-entities:
-  streamlit_app:
-    type: streamlit
-    main_file: streamlit_app.py
-    title: "Custom Smoothie Order Form"
-    query_warehouse: "COMPUTE_WH"
-    compute_pool: "SYSTEM_COMPUTE_POOL_CPU"
-    artifacts:
-      - pyproject.toml
-      - streamlit_app.py
-      - .streamlit/config.toml
+name: smoothie-app
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - streamlit
+  - pandas
+  - snowflake-snowpark-python
